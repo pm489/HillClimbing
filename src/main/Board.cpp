@@ -1,4 +1,3 @@
-#include <map>
 #include "ManhattenDistance.cpp"
 
 using namespace std;
@@ -13,9 +12,9 @@ class SquareBoard{
 			board = new int[size*size]; 
 		};
 	int get(int x, int y){
-		return boardSize[x*size+y];	
+		return board[x*boardSize+y];	
 	};
 	void put(int x, int y, int value){
-		boardSize[x*size+y] = value;
+		board[x*boardSize+y] = value;
 	};
 };
